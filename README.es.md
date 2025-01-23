@@ -17,55 +17,38 @@
 CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.1-blue?style=for-the-badge&logo=tailwind-css)
 ![Astro](https://img.shields.io/badge/Astro-4.3.3-orange?style=for-the-badge&logo=astro)
 
-Get your animations easily done with only Tailwind CSS classes.
+Obten animaciones de CSS con una sola clase de Tailwind!
 
-Visit the [website](https://tailwindcss-animations.vercel.app/) to get more information.
+Visita la [web](https://tailwindcss-animations.vercel.app/) para obtener más
+información.
 
 </div>
-  
-## Installation :book:
 
-#### Package install
+## Instalación
 
-> Install the package with your favorite package manager:
+Instala el paquete con tu gestor de paquetes favorito:
 
-- npm
-
-```bash
-npm install @Riozke/tailwind-animations
+```sh
+$ npm install @Riozke/tailwind-animations
+$ pnpm add @Riozke/tailwind-animations
+$ yarn add @Riozke/tailwind-animations
 ```
 
-- pnpm
-
-```bash
-pnpm install @Riozke/tailwind-animations
-```
-
-- yarn
-
-```bash
-yarn add @Riozke/tailwind-animations
-```
-
-#### Plugin Implementation
-
-> Use the plugin in your Tailwind CSS project:
+Usa el plugin en tu configuración de Tailwind:
 
 ```js
 // tailwind.config.mjs
 import animations from "@Riozke/tailwind-animations";
 
 export default {
-  // rest of the options
+  // resto de opciones
   plugins: [animations],
 };
 ```
 
-## Usage :gear:
+## Uso
 
-#### Example
-
-> Here are some simple examples of how to use this plugin and its animations:
+Este plugin trae varias clases de utilidad así como varias animaciones CSS listas para usar. Aquí tienes algunos ejemplos simples:
 
 ```html
 <div class="animate-fade-in">Fade in box</div>
@@ -77,7 +60,7 @@ export default {
 
 ### Animates Timeline
 
-This plugin also brings a utility class to animate elements based on their position in the window. You can use the class `view-animate-single` or `view-animate-[animation]` to generate any name for your timeline.
+Este plugin también trae una clase de utilidad para animar elementos basados en su posición en la ventana. Puedes usar la clase `view-animate-single` o `view-animate-[animation]` para poder generar cualquier nombre a tu timeline.
 
 ```html
 <div class="w-3/4 max-w-[800px] m-[0_auto]">
@@ -116,9 +99,9 @@ This plugin also brings a utility class to animate elements based on their posit
 </div>
 ```
 
-> Example extracted from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline)
+> Ejemplo extraido de [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline)
 
-## Contributors 👑
+## Contribuidores
 
 <a href="https://github.com/Riozke/tailwind-animations/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Riozke/tailwind-animations" />
