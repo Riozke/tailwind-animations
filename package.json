@@ -1,0 +1,29 @@
+{
+  "name": "@ryozke/tailwind-animations",
+  "version": "0.0.1",
+  "description": "Tailwind CSS plugin to effortlessly add stunning animations and transitions to your website, enabling engaging and dynamic user experiences with ease",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "standard ./src",
+    "lint:fix": "standard --fix ./src",
+    "test": "vitest",
+    "test:ci": "vitest run"
+  },
+  "keywords": [],
+  "author": "Daniel Cobos (@Riozke) & (@Ryozke)",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.5.1",
+    "standard": "17.1.2",
+    "tailwindcss": "^4.0.0",
+    "vitest": "^3.0.3",
+    "@csstools/postcss-minify": "^2.0.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
