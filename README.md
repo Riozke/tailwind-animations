@@ -5,11 +5,11 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](./README.es.md)
 
-![GitHub stars](https://img.shields.io/github/stars/midudev/tailwind-animations)
-![GitHub Forks](https://img.shields.io/github/forks/midudev/tailwind-animations)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/tailwind-animations)
-![GitHub issues](https://img.shields.io/github/issues/midudev/tailwind-animations)
-![GitHub Contributors](https://img.shields.io/github/contributors/midudev/tailwind-animations)
+![GitHub stars](https://img.shields.io/github/stars/Riozke/tailwind-animations)
+![GitHub Forks](https://img.shields.io/github/forks/Riozke/tailwind-animations)
+![GitHub PRs](https://img.shields.io/github/issues-pr/Riozke/tailwind-animations)
+![GitHub issues](https://img.shields.io/github/issues/Riozke/tailwind-animations)
+![GitHub Contributors](https://img.shields.io/github/contributors/Riozke/tailwind-animations)
 
 ![web](./lib/imgs/web.jpg)
 
@@ -32,19 +32,19 @@ Visit the [website](https://tailwindcss-animations.vercel.app/) to get more info
 - npm
 
 ```bash
-npm install @midudev/tailwind-animations
+npm install @Riozke/tailwind-animations
 ```
 
 - pnpm
 
 ```bash
-pnpm install @midudev/tailwind-animations
+pnpm install @Riozke/tailwind-animations
 ```
 
 - yarn
 
 ```bash
-yarn add @midudev/tailwind-animations
+yarn add @Riozke/tailwind-animations
 ```
 
 #### Plugin Implementation
@@ -53,7 +53,7 @@ yarn add @midudev/tailwind-animations
 
 ```js
 // tailwind.config.mjs
-import animations from "@midudev/tailwind-animations";
+import animations from "@Riozke/tailwind-animations";
 
 export default {
   // rest of the options
@@ -120,7 +120,7 @@ This plugin also brings a utility class to animate elements based on their posit
 
 ## Contributors 👑
 
-<a href="https://github.com/midudev/tailwind-animations/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=midudev/tailwind-animations" />
+<a href="https://github.com/Riozke/tailwind-animations/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Riozke/tailwind-animations" />
 </a>
 "# tailwind-animations" 
