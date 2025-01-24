@@ -32,19 +32,19 @@ Visit the [website](https://tailwindcss-animations.vercel.app/) to get more info
 - npm
 
 ```bash
-npm install @Riozke/tailwind-animations
+npm install @riozke/tailwind-animations
 ```
 
 - pnpm
 
 ```bash
-pnpm install @Riozke/tailwind-animations
+pnpm install @riozke/tailwind-animations
 ```
 
 - yarn
 
 ```bash
-yarn add @Riozke/tailwind-animations
+yarn add @riozke/tailwind-animations
 ```
 
 #### Plugin Implementation
@@ -53,7 +53,7 @@ yarn add @Riozke/tailwind-animations
 
 ```js
 // tailwind.config.mjs
-import animations from "@Riozke/tailwind-animations";
+import animations from "@riozke/tailwind-animations";
 
 export default {
   // rest of the options

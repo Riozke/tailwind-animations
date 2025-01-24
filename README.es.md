@@ -29,16 +29,16 @@ información.
 Instala el paquete con tu gestor de paquetes favorito:
 
 ```sh
-$ npm install @Riozke/tailwind-animations
-$ pnpm add @Riozke/tailwind-animations
-$ yarn add @Riozke/tailwind-animations
+$ npm install @riozke/tailwind-animations
+$ pnpm add @riozke/tailwind-animations
+$ yarn add @riozke/tailwind-animations
 ```
 
 Usa el plugin en tu configuración de Tailwind:
 
 ```js
 // tailwind.config.mjs
-import animations from "@Riozke/tailwind-animations";
+import animations from "@riozke/tailwind-animations";
 
 export default {
   // resto de opciones
