@@ -8,8 +8,6 @@ const $steps: HTMLSelectElement = document.querySelector("#steps")!;
 const $delay: HTMLSelectElement = document.querySelector("#delay")!;
 const $optionInputs: HTMLElement = document.getElementById("option-inputs")!;
 
-document.querySelector("script[role='generic']")?.remove();
-
 // functions to use as events handlers
 // created to add and remove the events depending on the toggle
 export function handleMouseEnter(this: HTMLElement) {
