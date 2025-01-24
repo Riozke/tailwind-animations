@@ -1,72 +1,72 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro'
 
-import pkg from "../../../package.json";
-import theme from "../../../src/theme.js";
+import pkg from '../../../package.json'
+import theme from '../../../src/theme.js'
 
-import CopyIcon from "@components/icons/copy.astro";
-import { Code } from "astro:components";
-import Github from "@components/icons/github.astro";
-import ToggleTheme from "@components/ToggleTheme.astro";
+import CopyIcon from '@components/icons/copy.astro'
+import { Code } from 'astro:components'
+import Github from '@components/icons/github.astro'
+import ToggleTheme from '@components/ToggleTheme.astro'
 
-const { animation, animationDuration, animationSteps, animationDelay } = theme;
-const { version } = pkg;
+const { animation, animationDuration, animationSteps, animationDelay } = theme
+const { version } = pkg
 ---
 
 <Layout
-  title="Tailwind CSS Animations Plugin"
+  title='Tailwind CSS Animations Plugin'
 >
   <wc-toast></wc-toast>
-  <main class="pb-20">
+  <main class='pb-20'>
     <header
-      class="mx-auto flex max-w-4xl flex-col items-center justify-center py-10"
+      class='mx-auto flex max-w-4xl flex-col items-center justify-center py-10'
     >
       <div
-        class="flex items-center justify-center gap-x-2 *:inline-flex *:items-center *:justify-center *:rounded *:bg-black/10 *:px-2 *:py-1 *:text-xs *:font-medium"
+        class='flex items-center justify-center gap-x-2 *:items-center *:justify-center *:rounded *:bg-black/10 *:px-2 *:py-1 *:text-xs *:font-medium'
       >
-        <ToggleTheme />
+      <ToggleTheme />
         <span>v.{version}</span>
         <a
-          aria-label="View website repository on GitHub"
-          href="https://github.com/Riozke/tailwind-animations"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="transition-colors ease-in-out hover:bg-black/20"
+          aria-label='View website repository on GitHub'
+          href='https://github.com/Riozke/tailwind-animations'
+          target='_blank'
+          rel='noopener noreferrer'
+          class='transition-colors ease-in-out hover:bg-black/20'
         >
-          <Github class="size-4" />
+          <Github class='size-4' />
         </a>
       </div>
-      <h1 class="text-center text-4xl font-semibold">
-        Tailwind CSS animations
+      <h1 class='text-center text-4xl font-semibold'>
+        Tailwind animations
       </h1>
-      <h2 class="font-medium opacity-70">the plugin that you need! =)</h2>
-      <div class="mt-10 px-2 sm:px-0">
-        <span class="mb-1 text-xs font-semibold opacity-50"
+      <h2 class='font-medium opacity-70'>The Tailwind CSS Animations Plugin</h2>
+      <div class='mt-10 px-2 sm:px-0'>
+        <span class='mb-1 text-xs font-semibold opacity-50'
           >1. Install the dependency</span
         >
         <div
-          class="flex w-full max-w-md items-center justify-between gap-x-2 rounded-xl bg-[#1e1e1e] py-1 pl-4 pr-1 text-center text-white backdrop-blur"
+          class='flex w-full max-w-md items-center justify-between gap-x-2 rounded-xl bg-[#1e1e1e] py-1 pl-4 pr-1 text-center text-white backdrop-blur'
         >
           <pre
-            class="flex text-sm">
+            class='flex text-sm'>
             <Code wrap={true} code='npm install @Riozke/tailwind-animations' theme="dark-plus" />
           </pre>
           <button
-            id="copyNpmInstall"
-            aria-label="Copy npm install command"
-            class="ring-offset-background focus-visible:ring-ring inline-flex size-7 items-center justify-center whitespace-nowrap rounded-full bg-white/10 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
+            id='copyNpmInstall'
+            aria-label='Copy npm install command'
+            class='ring-offset-background focus-visible:ring-ring inline-flex size-7 items-center justify-center whitespace-nowrap rounded-full bg-white/10 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none'
           >
             <CopyIcon />
           </button>
         </div>
-        <span class="mb-1 mt-4 block text-left text-xs font-semibold opacity-50"
+        <span class='mb-1 mt-4 block text-left text-xs font-semibold opacity-50'
           >2. Add to your configuration</span
         >
         <div
-          class="flex w-full max-w-md items-center gap-x-2 rounded-xl bg-[#1e1e1e] py-3 pl-4 pr-4 text-center text-white backdrop-blur"
+          class='flex w-full max-w-md items-center gap-x-2 rounded-xl bg-[#1e1e1e] py-3 pl-4 pr-4 text-center text-white backdrop-blur'
         >
           <pre
-            class="flex text-left text-xs">
+            class='flex text-left text-xs'>
             <Code wrap={true} theme="dark-plus" lang="js" code={`import animations from '@Riozke/tailwind-animations'
 
 export default {
@@ -78,116 +78,88 @@ export default {
       </div>
     </header>
 
-    <section class="mb-6 flex items-center justify-center">
-      <label class="relative inline-flex cursor-pointer items-center">
-        <input type="checkbox" value="" class="peer sr-only" id="animate" />
+    <section class='mb-6 flex items-center justify-center'>
+      <label class='relative inline-flex cursor-pointer items-center'>
+        <input type='checkbox' value='' class='peer sr-only' id='animate' />
         <div
           class="rtl:peer-checked:after:-translate-x peer h-8 w-16 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:size-7 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-zinc-600 peer-checked:after:translate-x-[32px] peer-checked:after:border-white peer-focus:outline-none dark:bg-zinc-300"
         >
         </div>
-        <span class="ms-3 text-xl font-medium text-gray-900 dark:text-gray-100"
-          >Animate all</span
-        >
+        <span class='ms-3 text-xl font-medium text-gray-900 dark:text-gray-100'>Animate all</span>
       </label>
-    </section>
-    <section
-      class="mb-6 grid md:grid-flow-col grid-flow-row gap-6 columns-4 items-center justify-center sticky top-0 z-10 pt-2"
-      id="option-inputs"
-    >
-      <label
-        for="duration"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
+    </section>  
+    <section class='mb-6 grid md:grid-flow-col grid-flow-row gap-6 columns-4 items-center justify-center sticky top-0 z-10 pt-2' id="option-inputs">
+      <label for="duration" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
         Duration
-        <select
-          name="duration"
-          id="duration"
-          class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-        >
-          {
-            Object.entries(animationDuration).map(([key, value]) => {
-              return <option value={value}>{key}</option>;
-            })
-          }
+        <select name="duration" id="duration" class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+          {Object.entries(animationDuration).map(([key, value])=> {
+            return (<option value={value}>{key}</option>)
+          })}
         </select>
       </label>
-      <label
-        for="delay"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
+      <label for="delay" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
         Delay
-        <select
-          name="delay"
-          id="delay"
-          class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-        >
-          {
-            Object.entries(animationDelay).map(([key, value]) => {
-              return <option value={value}>{key}</option>;
-            })
-          }
+        <select name="delay" id="delay" class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+          {Object.entries(animationDelay).map(([key, value])=> {
+            return (<option value={value}>{key}</option>)
+          })}
         </select>
       </label>
-      <label
-        for="steps"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
+      <label for="steps" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
         Steps
-        <select
-          name="steps"
-          id="steps"
-          class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-        >
-          {
-            Object.entries(animationSteps).map(([key, value]) => {
-              return <option value={value}>{key}</option>;
-            })
-          }
+        <select name="steps" id="steps" class="mt-2 bg-gray-50 min-w-36 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+          {Object.entries(animationSteps).map(([key, value])=> {
+            return (<option value={value}>{key}</option>)
+          })}
         </select>
       </label>
     </section>
 
     <section
-      class="m-auto grid max-w-4xl grid-cols-2 gap-4 px-4 sm:grid-cols-3 lg:grid-cols-4"
+      class='m-auto grid max-w-4xl grid-cols-2 gap-4 px-4 sm:grid-cols-3 lg:grid-cols-4'
     >
       {
         Object.keys(animation).map((animationKey) => {
           return (
             <article
-              class="relative col-span-1 cursor-crosshair rounded border border-gray-200 bg-white/10 backdrop-blur-sm transition-colors animate-duration-1000 hover:border-gray-400 hover:shadow"
+              class='relative col-span-1 cursor-crosshair rounded border border-gray-200 bg-white/10 backdrop-blur-sm transition-colors animate-duration-1000 hover:border-gray-400 hover:shadow'
               data-class={animationKey}
             >
-              <div class="flex h-full w-full flex-col items-center justify-center gap-4 p-4">
-                <span class="flex h-16 w-16 items-center justify-center rounded-md bg-zinc-600" />
-                <p class="text-sm font-semibold opacity-80">{animationKey}</p>
-                  </div>
+              <div class='flex h-full w-full flex-col items-center justify-center gap-4 p-4'>
+                <span class='flex h-16 w-16 items-center justify-center rounded-md bg-zinc-600' />
+                <p class='text-sm font-semibold opacity-80'>{animationKey}</p>
+              </div>
               <button
-                aria-label={`Copy ${animationKey.split("-").join(" ")} animation`}
-                class="absolute right-2 top-2"
+                aria-label={`Copy ${animationKey.split('-').join(' ')} animation`}
+                class='absolute right-2 top-2'
               >
                 <CopyIcon />
               </button>
             </article>
-          );
+          )
         })
       }
     </section>
 
     <footer
-      class="mx-auto flex flex-col max-w-2xl items-center justify-center px-4 pb-10 pt-20 text-center text-sm opacity-60"
+      class='mx-auto flex flex-col max-w-2xl items-center justify-center px-4 pb-10 pt-20 text-center text-sm opacity-60'
     >
       <p>
         Created by <a
-          href="https://www.linkedin.com/in/jorgecobos96"
-          target="_blank"
-          rel="noopener noreferrer">Riozke</a
+          href='https://twitter.com/Riozke'
+          target='_blank'
+          rel='noopener noreferrer'>Riozke</a
         >
+    
       </p>
+      
     </footer>
   </main>
 </Layout>
 
-<script src="../scripts/animation.ts"></script>
+<script src="../scripts/animation.ts">
+
+</script>
 
 <style>
   .is-sticky {

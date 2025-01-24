@@ -1,6 +1,6 @@
 {
-  "name": "@ryozke/tailwind-animations",
-  "version": "0.0.1",
+  "name": "@riozke/tailwind-animations",
+  "version": "0.0.2",
   "description": "Tailwind CSS plugin to effortlessly add stunning animations and transitions to your website, enabling engaging and dynamic user experiences with ease",
   "main": "./src/index.js",
   "type": "module",
