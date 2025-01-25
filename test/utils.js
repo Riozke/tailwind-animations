@@ -5,10 +5,10 @@ import animationsPlugin from '../src/index.js'
 
 const TAILWIND_BASE = '@tailwind utilities;'
 
-export function generatePluginCSS (options = {}) {
+export async function generatePluginCSS (options = {}) {
   const { inline = '', content = '' } = options
 
-  return postcss([
+  const result_1 = await postcss([
     minify(),
     tailwindcss({
       plugins: [animationsPlugin],
@@ -18,5 +18,5 @@ export function generatePluginCSS (options = {}) {
     .process(`${TAILWIND_BASE} ${inline}`, {
       from: undefined
     })
-    .then(result => result.css)
+  return result_1.css
 }
